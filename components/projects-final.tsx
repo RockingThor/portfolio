@@ -6,10 +6,10 @@ import SectionHeading from "./section-heading";
 const ProjectsFinal = () => {
     const data = projectsData;
     return (
-        <div className="">
+        <div className="mb-28">
             <SectionHeading title="Projects" />
             <div
-                className="flex flex-col sm:flex-row items-center justify-center scroll-mt-40"
+                className="flex flex-col sm:flex-row   items-center justify-center scroll-mt-40"
                 id="projects"
             >
                 {data.map((item, index) => (
