@@ -62,25 +62,42 @@ export const experiencesData = [
 
 export const projectsData = [
     {
-        title: "CorpComment",
+        title: "Discord Clone",
         description:
-            "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-        tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+            "I worked for 2 months for this project. I have tried to implement most of the features of Discord. Implemented O-Auth using Clerk so that users can sign in and signup smoothly. Used Mysql for storing and managing data. Used Prisma as ORM. Used Websocket for live broadcasting of messages. In this clone users can do group chat-calls, one to one video and audio call. Users also can share files in chat as image and pdf. Tried to make the UI close to Discord's.",
+        tags: [
+            "React",
+            "Next.js",
+            "Mysql",
+            "TypeScript",
+            "Tailwind",
+            "Prisma",
+            "Shadcn",
+            "OAuth",
+            "WebSockets",
+            "Livekit",
+        ],
         imageUrl: corpcommentImg,
+        githubLink: "https://github.com/RockingThor/discord",
+        deploymentLink: "https://discord-rohit.vercel.app/",
     },
     {
-        title: "rmtDev",
+        title: "Movix: The Movie Exploration Site",
         description:
-            "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-        tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+            "I worked for 2 months for this project. I have tried to implement most of the features of Discord. Implemented O-Auth using Clerk so that users can sign in and signup smoothly. Used Mysql for storing and managing data. Used Prisma as ORM. Used Websocket for live broadcasting of messages. In this clone users can do group chat-calls, one to one video and audio call. Users also can share files in chat as image and pdf. Tried to make the UI close to Discord's.",
+        tags: ["React", "TypeScript", "Saas", "Redux", "Lazy loading"],
         imageUrl: rmtdevImg,
+        githubLink: "https://github.com/RockingThor/Moviex-Deploy",
+        deploymentLink: "https://rohit-moviex.vercel.app/",
     },
     {
-        title: "Word Analytics",
+        title: "Ecommerce Shoe Store",
         description:
-            "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-        tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+            "I worked for 2 months for this project. I have tried to implement most of the features of Discord. Implemented O-Auth using Clerk so that users can sign in and signup smoothly. Used Mysql for storing and managing data. Used Prisma as ORM. Used Websocket for live broadcasting of messages. In this clone users can do group chat-calls, one to one video and audio call. Users also can share files in chat as image and pdf. Tried to make the UI close to Discord's.",
+        tags: ["React", "Next.js", "Strapi", "Tailwind", "Redux"],
         imageUrl: wordanalyticsImg,
+        githubLink: "https://github.com/RockingThor/shoe-store-frontend",
+        deploymentLink: "https://rohit-nike.vercel.app/",
     },
 ];
 

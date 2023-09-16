@@ -1,7 +1,8 @@
 import About from "@/components/about";
 import Divider from "@/components/divider";
 import Intro from "@/components/intro";
-import Projects from "@/components/projects";
+import ProjectsFinal from "@/components/projects-final";
+import ShowProjects from "@/components/show-projects";
 
 export default function Home() {
     return (
@@ -9,7 +10,7 @@ export default function Home() {
             <Intro />
             <Divider />
             <About />
-            <Projects />
+            <ProjectsFinal />
         </main>
     );
 }
