@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { links } from "@/lib/data";
 import Link from "next/link";
@@ -7,8 +7,53 @@ import clsx from "clsx";
 
 const Header = () => {
     const [activeSection, setActiveSection] = useState("Home");
+    const [visible, setVisible] = useState(true);
+    const [prevScrollPos, setPrevScrollPos] = useState(0);
+    const [scrollPos, setScrollPos] = useState(0);
+    useEffect(() => {
+        const handleScroll = () => {
+            const currentScrollPos = window.pageYOffset;
+            if (prevScrollPos > currentScrollPos || prevScrollPos == 0) {
+                setVisible(true);
+            } else {
+                setVisible(false);
+            }
+            setPrevScrollPos(currentScrollPos);
+        };
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, [prevScrollPos]);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setScrollPos(window.scrollY);
+        };
+        console.log(scrollPos);
+        document.addEventListener("scroll", handleScroll);
+        return () => {
+            document.removeEventListener("scroll", handleScroll);
+        };
+    }, [scrollPos]);
+
+    useEffect(() => {
+        if (scrollPos >= 0 && scrollPos <= 500) {
+            setActiveSection("Home");
+        } else if (scrollPos > 500 && scrollPos <= 1000) {
+            setActiveSection("About");
+        } else if (scrollPos > 1000 && scrollPos <= 2300) {
+            setActiveSection("Projects");
+        } else if (scrollPos > 2300 && scrollPos <= 3200) {
+            setActiveSection("Experience");
+        } else if (scrollPos > 3200) {
+            setActiveSection("Contact");
+        }
+    }, [scrollPos]);
     return (
-        <header className="z-[999] relative">
+        <header
+            className={`z-[999] relative transition ${visible ? "" : "hidden"}`}
+        >
             <motion.div
                 className="fixed top-0 left-1/2 -translate-x-1/2 h-[4.5rem] w-full rounded-none border border-white border-opacity-40
              bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:w-[36rem]
