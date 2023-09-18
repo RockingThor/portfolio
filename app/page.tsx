@@ -1,5 +1,6 @@
 import About from "@/components/about";
 import Contact from "@/components/contact";
+import Copyright from "@/components/copyright";
 import Divider from "@/components/divider";
 import Experience from "@/components/experience";
 
@@ -20,6 +21,7 @@ export default function Home() {
             <Experience />
             {/* <Skills /> */}
             <Contact />
+            <Copyright />
         </main>
     );
 }

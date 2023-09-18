@@ -16,6 +16,7 @@ import { Button } from "./ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import emailjs from "@emailjs/browser";
 import SectionHeading from "./section-heading";
+import { useToast } from "./ui/use-toast";
 
 const formSchema = z.object({
     name: z.string().min(2).max(50),
@@ -26,6 +27,7 @@ const formSchema = z.object({
 const Contact = () => {
     const [isSubmitting, setIsSubmitting] = useState(false);
     const refForm = useRef();
+    const { toast } = useToast();
     const form = useForm<z.infer<typeof formSchema>>({
         //@ts-ignore
         resolver: zodResolver(formSchema),
@@ -46,12 +48,19 @@ const Contact = () => {
             process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
         );
         console.log(response);
+        if (response.text === "OK") {
+            toast({
+                title: "Message delivered",
+                description:
+                    "Hello there... I have received your message. I'll reply as soon as I can.",
+            });
+        }
         setIsSubmitting(false);
     };
 
     return (
         <div
-            className="scroll-mt-[8rem] w-9/10"
+            className="scroll-mt-[8rem] w-9/10 mb-[17rem]"
             id="contact"
         >
             <SectionHeading title="Contact me" />

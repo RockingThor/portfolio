@@ -58,7 +58,7 @@ export const projectsData = [
     {
         title: "Discord Clone",
         description:
-            "I worked for 2 months for this project. I have tried to implement most of the features of Discord. Implemented O-Auth using Clerk so that users can sign in and signup smoothly. Used Mysql for storing and managing data. Used Prisma as ORM. Used Websocket for live broadcasting of messages. In this clone users can do group chat-calls, one to one video and audio call. Users also can share files in chat as image and pdf. Tried to make the UI close to Discord's.",
+            "I created a Discord clone using React, Next.js, TypeScript, and Tailwind for the frontend, while utilizing MySQL and Prisma for the database. The project includes OAuth authentication, real-time chat functionality with WebSockets, and integrates Livekit for video conferencing. This comprehensive platform allows users to connect, chat, and engage seamlessly, showcasing my skills in frontend development, backend database management, and real-time communication. Explore this project to witness a dynamic and interactive community-building experience.",
         tags: [
             "React",
             "Next.js",
@@ -78,7 +78,7 @@ export const projectsData = [
     {
         title: "Movix: The Movie Exploration Site",
         description:
-            "I worked for 2 months for this project. I have tried to implement most of the features of Discord. Implemented O-Auth using Clerk so that users can sign in and signup smoothly. Used Mysql for storing and managing data. Used Prisma as ORM. Used Websocket for live broadcasting of messages. In this clone users can do group chat-calls, one to one video and audio call. Users also can share files in chat as image and pdf. Tried to make the UI close to Discord's.",
+            "I've crafted a dynamic movie exploration site, leveraging React, TypeScript, SaaS, Redux, and lazy loading techniques. This platform offers a user-friendly interface to discover and explore a vast collection of movies. With Redux managing state seamlessly, users can navigate effortlessly through the content while enjoying speedy load times through lazy loading. This project not only showcases my proficiency in frontend development but also demonstrates my ability to create a responsive, efficient, and visually engaging web application for movie enthusiasts. Dive into this cinematic journey to experience the world of movies like never before.",
         tags: ["React", "TypeScript", "Saas", "Redux", "Lazy loading"],
 
         githubLink: "https://github.com/RockingThor/Moviex-Deploy",
@@ -87,7 +87,7 @@ export const projectsData = [
     {
         title: "Ecommerce Shoe Store",
         description:
-            "I worked for 2 months for this project. I have tried to implement most of the features of Discord. Implemented O-Auth using Clerk so that users can sign in and signup smoothly. Used Mysql for storing and managing data. Used Prisma as ORM. Used Websocket for live broadcasting of messages. In this clone users can do group chat-calls, one to one video and audio call. Users also can share files in chat as image and pdf. Tried to make the UI close to Discord's.",
+            "I've meticulously recreated the Nike website, complete with a seamless shopping experience, using React, Next.js, Strapi, Tailwind, and Redux. Users can effortlessly add items to their cart and proceed to checkout securely through Stripe integration. This project exemplifies my proficiency in frontend development, UI/UX design with Tailwind, and state management with Redux. It also highlights my ability to seamlessly connect with a backend using Strapi and implement secure payment processing through Stripe. Explore this project to witness a faithful recreation of a renowned e-commerce platform and the skills that power it.",
         tags: ["React", "Next.js", "Strapi", "Tailwind", "Redux"],
 
         githubLink: "https://github.com/RockingThor/shoe-store-frontend",

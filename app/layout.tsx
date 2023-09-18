@@ -1,6 +1,7 @@
 import Header from "@/components/header";
 import "./globals.css";
 import { Inter } from "next/font/google";
+import { Toaster } from "@/components/ui/toaster";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,7 +22,7 @@ export default function RootLayout({
             className="!scroll-smooth"
         >
             <body
-                className={`${inter.className} bg-gray-50 text-gray-950 relative h-[5000px] pt-28 sm:pt-36`}
+                className={`${inter.className} bg-gray-50 text-gray-950 relative  pt-28 sm:pt-36`}
             >
                 <div
                     className="bg-[#fbe2e3] absolute top-[-6rem] right-[11rem] h-[31.25rem] -z-10 w-[31.25rem] rounded-full blur-[10rem]
@@ -33,6 +34,7 @@ export default function RootLayout({
                 ></div>
                 <Header />
                 {children}
+                <Toaster />
             </body>
         </html>
     );
