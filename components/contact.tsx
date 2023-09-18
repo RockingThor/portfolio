@@ -51,19 +51,19 @@ const Contact = () => {
 
     return (
         <div
-            className=""
+            className="scroll-mt-[8rem] w-9/10"
             id="contact"
         >
             <SectionHeading title="Contact me" />
-            <div className="md:border md:rounded-lg md:p-4 md:w-[45rem]">
+            <div className="md:border md:rounded-lg md:p-4 md:w-[45rem] w-9/10">
                 <Form {...form}>
                     <form
                         onSubmit={form.handleSubmit(onSubmit)}
-                        className=" md:flex md:flex-col md:justify-center md:items-center gap-2 "
+                        className=" md:flex md:flex-col md:justify-center md:items-center gap-2 w-9/10"
                         /* @ts-ignore */
                         ref={refForm}
                     >
-                        <div className="md:gap-4 md:flex md:flex-row md:justify-center">
+                        <div className="md:gap-4 md:flex md:flex-row md:justify-center w-9/10">
                             <FormField
                                 control={form.control}
                                 name="name"

@@ -17,7 +17,6 @@ interface ProjectProps {
     title: string;
     description: string;
     tags: string[];
-    imageUrl: StaticImageData;
     githubLink: string;
     deploymentLink: string;
 }
@@ -26,14 +25,14 @@ const ShowProjects = ({
     title,
     description,
     tags,
-    imageUrl,
+
     githubLink,
     deploymentLink,
 }: ProjectProps) => {
     const data = projectsData;
     return (
         <div className="p-2">
-            <Card className="w-[300px] sm:w-[400px] md:w-[40rem] shadow-xl">
+            <Card className="w-[300px] sm:w-[400px] md:w-[40rem] shadow-xl w-9/10">
                 <CardHeader>
                     <CardTitle>{title}</CardTitle>
                     <CardDescription>{description}</CardDescription>

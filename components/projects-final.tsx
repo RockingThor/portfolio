@@ -9,7 +9,7 @@ const ProjectsFinal = () => {
         <div className="mb-28">
             <SectionHeading title="Projects" />
             <div
-                className="flex flex-col md:flex-col md:w-[50rem]   items-center justify-center scroll-mt-40"
+                className="flex flex-col md:flex-col   items-center justify-center scroll-mt-40 w-9/10"
                 id="projects"
             >
                 {data.map((item, index) => (
@@ -18,7 +18,6 @@ const ProjectsFinal = () => {
                         title={item.title}
                         tags={item.tags}
                         description={item.description}
-                        imageUrl={item.imageUrl}
                         githubLink={item.githubLink}
                         deploymentLink={item.deploymentLink}
                     />

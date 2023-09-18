@@ -1,6 +1,7 @@
 import About from "@/components/about";
 import Contact from "@/components/contact";
 import Divider from "@/components/divider";
+import Experience from "@/components/experience";
 
 import Intro from "@/components/intro";
 import ProjectsFinal from "@/components/projects-final";
@@ -10,9 +11,13 @@ export default function Home() {
     return (
         <main className="flex flex-col items-center px-4">
             <Intro />
-            <Divider />
+            <Divider
+                margin="my-24"
+                display="hidden"
+            />
             <About />
             <ProjectsFinal />
+            <Experience />
             {/* <Skills /> */}
             <Contact />
         </main>
