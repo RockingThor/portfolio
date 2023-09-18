@@ -15,6 +15,7 @@ import { useForm } from "react-hook-form";
 import { Button } from "./ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import emailjs from "@emailjs/browser";
+import SectionHeading from "./section-heading";
 
 const formSchema = z.object({
     name: z.string().min(2).max(50),
@@ -49,77 +50,83 @@ const Contact = () => {
     };
 
     return (
-        <div className="md:border md:rounded-lg md:p-4 md:w-[45rem]">
-            <Form {...form}>
-                <form
-                    onSubmit={form.handleSubmit(onSubmit)}
-                    className=" md:flex md:flex-col md:justify-center md:items-center gap-2 "
-                    /* @ts-ignore */
-                    ref={refForm}
-                >
-                    <div className="md:gap-4 md:flex md:flex-row md:justify-center">
-                        <FormField
-                            control={form.control}
-                            name="name"
-                            render={({ field }) => (
-                                <FormItem className="md:flex md:flex-col">
-                                    <FormLabel>Name</FormLabel>
-                                    <FormControl>
-                                        <Input
-                                            placeholder="Rohit Nandi"
-                                            {...field}
-                                            className="md:w-[20rem] md:p-2"
-                                        />
-                                    </FormControl>
-                                    <FormMessage />
-                                </FormItem>
-                            )}
-                        />
-                        <FormField
-                            control={form.control}
-                            name="email"
-                            render={({ field }) => (
-                                <FormItem className="md:flex md:flex-col">
-                                    <FormLabel>Email</FormLabel>
-                                    <FormControl>
-                                        <Input
-                                            placeholder="rohit@rohit.com"
-                                            {...field}
-                                            className="md:w-[20rem] md:p-2"
-                                        />
-                                    </FormControl>
-                                    <FormMessage />
-                                </FormItem>
-                            )}
-                        />
-                    </div>
-                    <div>
-                        <FormField
-                            control={form.control}
-                            name="message"
-                            render={({ field }) => (
-                                <FormItem>
-                                    <FormLabel>Message</FormLabel>
-                                    <FormControl>
-                                        <Textarea
-                                            placeholder="Please write your message here"
-                                            {...field}
-                                            className="md:w-[41rem]"
-                                        />
-                                    </FormControl>
-                                    <FormMessage />
-                                </FormItem>
-                            )}
-                        />
-                    </div>
-                    <Button
-                        type="submit"
-                        disabled={isSubmitting}
+        <div
+            className=""
+            id="contact"
+        >
+            <SectionHeading title="Contact me" />
+            <div className="md:border md:rounded-lg md:p-4 md:w-[45rem]">
+                <Form {...form}>
+                    <form
+                        onSubmit={form.handleSubmit(onSubmit)}
+                        className=" md:flex md:flex-col md:justify-center md:items-center gap-2 "
+                        /* @ts-ignore */
+                        ref={refForm}
                     >
-                        Submit
-                    </Button>
-                </form>
-            </Form>
+                        <div className="md:gap-4 md:flex md:flex-row md:justify-center">
+                            <FormField
+                                control={form.control}
+                                name="name"
+                                render={({ field }) => (
+                                    <FormItem className="md:flex md:flex-col">
+                                        <FormLabel>Name</FormLabel>
+                                        <FormControl>
+                                            <Input
+                                                placeholder="Rohit Nandi"
+                                                {...field}
+                                                className="md:w-[20rem] md:p-2"
+                                            />
+                                        </FormControl>
+                                        <FormMessage />
+                                    </FormItem>
+                                )}
+                            />
+                            <FormField
+                                control={form.control}
+                                name="email"
+                                render={({ field }) => (
+                                    <FormItem className="md:flex md:flex-col">
+                                        <FormLabel>Email</FormLabel>
+                                        <FormControl>
+                                            <Input
+                                                placeholder="rohit@rohit.com"
+                                                {...field}
+                                                className="md:w-[20rem] md:p-2"
+                                            />
+                                        </FormControl>
+                                        <FormMessage />
+                                    </FormItem>
+                                )}
+                            />
+                        </div>
+                        <div className="pb-2">
+                            <FormField
+                                control={form.control}
+                                name="message"
+                                render={({ field }) => (
+                                    <FormItem>
+                                        <FormLabel>Message</FormLabel>
+                                        <FormControl>
+                                            <Textarea
+                                                placeholder="Please write your message here"
+                                                {...field}
+                                                className="md:w-[41rem]"
+                                            />
+                                        </FormControl>
+                                        <FormMessage />
+                                    </FormItem>
+                                )}
+                            />
+                        </div>
+                        <Button
+                            type="submit"
+                            disabled={isSubmitting}
+                        >
+                            Submit
+                        </Button>
+                    </form>
+                </Form>
+            </div>
         </div>
     );
 };

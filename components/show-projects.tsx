@@ -33,7 +33,7 @@ const ShowProjects = ({
     const data = projectsData;
     return (
         <div className="p-2">
-            <Card className="w-[300px] sm:w-[400px]">
+            <Card className="w-[300px] sm:w-[400px] md:w-[40rem] shadow-xl">
                 <CardHeader>
                     <CardTitle>{title}</CardTitle>
                     <CardDescription>{description}</CardDescription>
