@@ -41,7 +41,7 @@ const About = () => {
                 playing chess, watching cricket and movies. I also enjoy{" "}
                 <span className="font-medium">learning new things</span>. I am
                 currently learning about{" "}
-                <span className="font-medium">personal finance</span>.
+                <span className="font-medium">personal finance</span> and focusing towards my <span className="font-medium">DSA Skills</span>.
             </p>
         </motion.section>
     );
