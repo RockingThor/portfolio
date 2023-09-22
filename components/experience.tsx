@@ -26,10 +26,9 @@ const Experience = () => {
                     <CardContent>
                         <p className="">
                             I have completed my Bachelor's in Computer Science
-                            from Midnapore College. In this time I learned
+                            from Midnapore College. During this time I learned
                             fundamentals about Computers. Got into web
-                            development. Did DSA and went ahead to bild a tech
-                            career.
+                            development.
                         </p>
                     </CardContent>
                 </Card>
@@ -51,7 +50,7 @@ const Experience = () => {
                     <CardContent className="flex flex-row">
                         Joined Wipro as a Java Fullstack developer. Learned a
                         lot about the JAVA Ecosystem. At this time my main work
-                        was to build REST APIs using Spring framework. Got some
+                        was to build REST APIs using the Spring framework. Got some
                         opportunity to work on React JS.
                     </CardContent>
                 </Card>
@@ -72,7 +71,7 @@ const Experience = () => {
                             Started focusing on the JS Ecosystem and started
                             working on Next JS. Building backend in Next and
                             Express. Using Typescript extensively. Building
-                            OpenAPI specs for client.
+                            OpenAPI specs for a client.
                         </p>
                     </CardContent>
                 </Card>
