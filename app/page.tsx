@@ -21,7 +21,7 @@ export default function Home() {
             <ProjectsFinal />
             <Experience />
             {/* <Skills /> */}
-            <div className="mb-[8rem]">
+            <div className="mb-[8rem] hidden sm:block">
                 <TextRevealCard
                     text="You know the business"
                     revealText="I know the technology"
