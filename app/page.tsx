@@ -7,6 +7,7 @@ import Experience from "@/components/experience";
 import Intro from "@/components/intro";
 import ProjectsFinal from "@/components/projects-final";
 import Skills from "@/components/skills";
+import { TextRevealCard } from "@/components/text-reveal";
 
 export default function Home() {
     return (
@@ -20,6 +21,12 @@ export default function Home() {
             <ProjectsFinal />
             <Experience />
             {/* <Skills /> */}
+            <div className="mb-[8rem]">
+                <TextRevealCard
+                    text="You know the business"
+                    revealText="I know the technology"
+                />
+            </div>
             <Contact />
             <Copyright />
         </main>
